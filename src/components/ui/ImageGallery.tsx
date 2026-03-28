@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import FadeIn from "./FadeIn";
+import { assetPath } from "@/lib/utils";
 
 interface ImageGalleryProps {
   images: string[];
@@ -17,7 +18,7 @@ export default function ImageGallery({ images, alt }: ImageGalleryProps) {
         <FadeIn key={src} delay={index * 0.1}>
           <div className="relative aspect-[16/10] w-full overflow-hidden">
             <Image
-              src={src}
+              src={assetPath(src)}
               alt={`${alt} - ${index + 1}`}
               fill
               className="object-cover"

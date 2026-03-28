@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useTranslations } from "@/i18n/provider";
 import type { Project } from "@/types/project";
+import { assetPath } from "@/lib/utils";
 
 export default function ProjectCard({ project }: { project: Project }) {
   const { locale, t } = useTranslations();
@@ -18,7 +19,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           className="h-full w-full"
         >
           <Image
-            src={project.heroImage}
+            src={assetPath(project.heroImage)}
             alt={project.name}
             fill
             className="object-cover"

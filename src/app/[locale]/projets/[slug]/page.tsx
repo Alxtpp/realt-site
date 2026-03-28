@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { projects, getProjectBySlug, getAdjacentProjects } from "@/data/projects";
 import Container from "@/components/ui/Container";
+import { assetPath } from "@/lib/utils";
 import FadeIn from "@/components/ui/FadeIn";
 import ProjectSpecs from "@/components/ui/ProjectSpecs";
 import ProjectNav from "@/components/ui/ProjectNav";
@@ -80,7 +81,7 @@ export default async function ProjectPage({
         <FadeIn delay={0.3}>
           <div className="mt-16 md:mt-20 relative aspect-[16/10] w-full overflow-hidden">
             <Image
-              src={project.heroImage}
+              src={assetPath(project.heroImage)}
               alt={project.name}
               fill
               className="object-cover"
