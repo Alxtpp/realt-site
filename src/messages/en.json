@@ -1,0 +1,83 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "land": "Land",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Real Estate Development & Construction",
+    "scroll": "Discover"
+  },
+  "home": {
+    "featuredTitle": "Our Projects",
+    "featuredLink": "View all projects",
+    "philosophy": "We manage the entire process in-house — from the preliminary study to the handover — without relying on external architecture firms. This approach gives us an in-depth understanding of the market across Western Switzerland. In collaboration with Outsider.Architecture SA, we enhance each plot with high-quality, aesthetic solutions perfectly tailored to local expectations.",
+    "philosophyHighlight": "Over 25 years of expertise in Western Switzerland",
+    "ctaTitle": "Let's discuss your project",
+    "ctaButton": "Contact us"
+  },
+  "projects": {
+    "title": "Projects",
+    "upcoming": "Coming soon",
+    "location": "Location",
+    "type": "Type",
+    "surface": "Gross floor area",
+    "units": "Number of units",
+    "client": "Client",
+    "architect": "Architect",
+    "developer": "Development",
+    "delivery": "Delivery",
+    "link": "Link",
+    "previous": "Previous project",
+    "next": "Next project",
+    "residential": "Residential",
+    "commercial": "Commercial",
+    "mixed": "Mixed"
+  },
+  "about": {
+    "title": "About",
+    "storyTitle": "Our story",
+    "story": "Founded by Cédric Loubet and Pierre Tranchant, RealT SA is a company active in real estate development and construction, combining over 25 years of experience in the Western Switzerland real estate market.",
+    "story2": "Our strength lies in our ability to carefully listen to each situation and propose personalized offers, taking into account the challenges and objectives of each seller, while respecting environmental and regulatory constraints.",
+    "story3": "RealT SA is active throughout the entire process, from project analysis to handing over the keys to final buyers. We also act as a general and total contractor, recognized by Swiss banks, thus guaranteeing complete, optimized and secure project management.",
+    "teamTitle": "Our team",
+    "valuesTitle": "Our values",
+    "value1Title": "Quality",
+    "value1": "Projects designed with rigor and attention to detail.",
+    "value2Title": "Transparency",
+    "value2": "Clear guidance at every step of the process.",
+    "value3Title": "Innovation",
+    "value3": "Modern solutions adapted to market expectations."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "We are at your disposal for any information.",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "phone": "Phone",
+    "message": "Message",
+    "send": "Send",
+    "success": "Your message has been sent successfully.",
+    "office": "Our office",
+    "address": "Rue Centrale 5, 1110 Morges"
+  },
+  "land": {
+    "title": "Land",
+    "subtitle": "Are you the owner of a plot of land or a property?",
+    "intro": "RealT SA is constantly looking for new land opportunities in Western Switzerland. We carefully study each proposal and offer tailored solutions for every situation.",
+    "criteria": "What we are looking for",
+    "criterion1": "Buildable land in residential zones",
+    "criterion2": "Buildings to renovate or convert",
+    "criterion3": "Plots in development zones",
+    "criterion4": "Real estate development opportunities",
+    "cta": "Submit a property",
+    "ctaText": "Contact us to discuss your project. Our team will carefully analyze your proposal and provide a personalized response."
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "legal": "Legal notice",
+    "privacy": "Privacy policy"
+  }
+}
