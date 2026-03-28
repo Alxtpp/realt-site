@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "@/i18n/provider";
-import { assetPath } from "@/lib/utils";
 
 export default function HomeHero() {
   const { t } = useTranslations();
@@ -12,7 +11,7 @@ export default function HomeHero() {
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src={assetPath("/images/hero-home.jpg")}
+        src="/images/hero-home.jpg"
         alt="RealT SA"
         fill
         className="object-cover"
