@@ -108,7 +108,7 @@ galleryImages: [
   },
   {
     slug: "veyrier",
-    name: "Alta",
+    name: "Résidence Alta",
     location: "Veyrier, GE",
     address: "Veyrier, GE",
     description: {
@@ -132,7 +132,7 @@ galleryImages: [
   },
   {
     slug: "florea",
-    name: "Floréa",
+    name: "Les villas Floréa",
     location: "Renens, VD",
     address: "Renens, VD",
     description: {
@@ -154,7 +154,7 @@ galleryImages: [
   },
   {
     slug: "bellavira",
-    name: "Bellavira",
+    name: "Le clos Bellavira",
     location: "Bellevue, GE",
     address: "Bellevue, GE",
     description: {
@@ -176,7 +176,7 @@ galleryImages: [
   },
   {
     slug: "castella",
-    name: "Castella",
+    name: "Les villas Castella",
     location: "Thônex, GE",
     address: "Thônex, GE",
     description: {

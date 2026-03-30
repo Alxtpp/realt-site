@@ -110,10 +110,7 @@ export default async function ProjectPage({
           </div>
         )}
 
-        {/* Bottom Navigation */}
-        <div className="mt-16 md:mt-24">
-          <ProjectNav previous={previous} next={next} />
-        </div>
+
       </Container>
     </article>
   );
