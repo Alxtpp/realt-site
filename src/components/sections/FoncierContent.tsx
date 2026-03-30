@@ -17,7 +17,7 @@ export default function FoncierContent() {
   return (
     <>
       <FadeIn>
-        <h1 className="text-4xl md:text-5xl font-light tracking-wide mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-light tracking-wide mb-6">
           {t("land.title")}
         </h1>
       </FadeIn>
@@ -34,7 +34,7 @@ export default function FoncierContent() {
 
       {/* Criteria */}
       <FadeIn delay={0.3}>
-        <div className="bg-brand-cream p-8 md:p-12 mb-16 max-w-2xl">
+        <div className="bg-brand-cream p-6 md:p-12 mb-16 max-w-2xl">
           <h2 className="text-lg font-medium mb-6">{t("land.criteria")}</h2>
           <ul className="space-y-3">
             {criteria.map((criterion) => (

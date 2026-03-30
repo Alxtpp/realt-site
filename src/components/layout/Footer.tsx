@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer className="bg-brand-black text-white py-16 md:py-24">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8">
           {/* Company */}
           <div>
             <h3 className="text-xl font-bold tracking-wider mb-6">RealT</h3>
@@ -61,20 +61,6 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Legal */}
-          <div>
-            <h4 className="text-sm uppercase tracking-wider mb-6 text-white/40">
-              Legal
-            </h4>
-            <nav className="flex flex-col gap-3">
-              <span className="text-white/60 text-sm">
-                {t("footer.legal")}
-              </span>
-              <span className="text-white/60 text-sm">
-                {t("footer.privacy")}
-              </span>
-            </nav>
-          </div>
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10">

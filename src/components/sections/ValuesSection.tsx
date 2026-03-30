@@ -19,7 +19,7 @@ export default function ValuesSection() {
           {t("about.valuesTitle")}
         </h2>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12">
         {values.map((value, i) => (
           <FadeIn key={value.title} delay={i * 0.1}>
             <div>

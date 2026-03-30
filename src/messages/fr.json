@@ -6,13 +6,13 @@
     "contact": "Contact"
   },
   "hero": {
-    "tagline": "Promotion immobilière & Construction",
+    "tagline": "De la réflexion à la première pierre.",
     "scroll": "Découvrir"
   },
   "home": {
     "featuredTitle": "Nos Projets",
     "featuredLink": "Voir tous les projets",
-    "philosophy": "Nous maîtrisons l'ensemble du processus en interne — de l'étude préliminaire à la livraison du lot — sans dépendre de bureaux d'architecture externes. Cette approche nous donne une connaissance approfondie du marché dans toute la Suisse romande. En collaboration avec Outsider.Architecture SA, nous valorisons chaque terrain avec des solutions qualitatives, esthétiques et parfaitement adaptées aux attentes locales.",
+    "philosophy": "En collaboration étroite avec Outsider.Architecture SA, nous valorisons les terrains en développant des solutions qualitatives et esthétiques, adaptées aux attentes du marché.\n\nNotre force réside dans notre capacité à écouter attentivement chaque situation et à proposer des offres personnalisées, tenant compte des problématiques et des objectifs de chaque vendeur, tout en respectant les contraintes environnementales et réglementaires.\n\nRealT SA est active sur l'ensemble du processus, de l'analyse du projet jusqu'à la remise des clés aux acquéreurs finaux. Nous intervenons également en tant qu'entreprise générale et totale, reconnue par les banques suisses, garantissant ainsi une gestion complète, optimisée et sécurisée des projets.",
     "philosophyHighlight": "Plus de 25 ans d'expertise en Suisse romande",
     "ctaTitle": "Discutons de votre projet",
     "ctaButton": "Nous contacter"
@@ -20,6 +20,8 @@
   "projects": {
     "title": "Projets",
     "upcoming": "À venir",
+    "completed": "Terminé",
+    "inProgress": "En cours",
     "location": "Localisation",
     "type": "Type",
     "surface": "Surface brute de plancher",
@@ -29,6 +31,7 @@
     "developer": "Développement",
     "delivery": "Livraison",
     "link": "Lien",
+    "dedicatedSite": "vers le site dédié",
     "previous": "Projet précédent",
     "next": "Projet suivant",
     "residential": "Résidentiel",
@@ -60,18 +63,20 @@
     "message": "Message",
     "send": "Envoyer",
     "success": "Votre message a bien été envoyé.",
+    "sending": "Envoi en cours…",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
     "office": "Notre bureau",
     "address": "Rue Centrale 5, 1110 Morges"
   },
   "land": {
     "title": "Foncier",
-    "subtitle": "Vous êtes propriétaire d'un terrain ou d'un bien immobilier ?",
+    "subtitle": "Vous êtes propriétaire d'un terrain ou d'un bien immobilier?",
     "intro": "RealT SA est constamment à la recherche de nouvelles opportunités foncières en Suisse romande. Nous étudions chaque proposition avec attention et proposons des offres adaptées à chaque situation.",
     "criteria": "Ce que nous recherchons",
     "criterion1": "Terrains constructibles en zone résidentielle",
     "criterion2": "Immeubles à rénover ou à transformer",
     "criterion3": "Parcelles en zone de développement",
-    "criterion4": "Opportunités de promotion immobilière",
+    "criterion4": "Terrains avec permis de construire en force",
     "cta": "Proposer un bien",
     "ctaText": "Contactez-nous pour discuter de votre projet. Notre équipe analysera votre proposition avec attention et vous fournira une réponse personnalisée."
   },

@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import { notFound } from "next/navigation";
 import { locales, type Locale } from "@/i18n/routing";
 import { getMessages } from "@/i18n/get-messages";
@@ -9,6 +9,14 @@ import Footer from "@/components/layout/Footer";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-cormorant",
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
 });
 
 export function generateStaticParams() {
@@ -31,7 +39,7 @@ export default async function LocaleLayout({
   const messages = await getMessages(locale as Locale);
 
   return (
-    <html lang={locale} className={inter.className}>
+    <html lang={locale} className={`${inter.className} ${cormorant.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
         <IntlProvider locale={locale} messages={messages}>
           <Header />

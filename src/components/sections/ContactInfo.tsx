@@ -7,7 +7,7 @@ export default function ContactInfo() {
   const { t } = useTranslations();
 
   return (
-    <div className="space-y-12">
+    <div className="space-y-8 md:space-y-12">
       <div>
         <h3 className="text-sm uppercase tracking-wider text-brand-gray-400 mb-4">
           {t("contact.office")}

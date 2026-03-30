@@ -10,14 +10,14 @@ export default function HomePhilosophy() {
   return (
     <section className="py-24 md:py-32 bg-brand-cream">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 items-center">
           <FadeIn>
-            <p className="text-2xl md:text-3xl font-light leading-snug tracking-wide text-brand-gray-800">
+            <p className="text-xl sm:text-2xl md:text-3xl font-light leading-snug tracking-wide text-brand-gray-800">
               {t("home.philosophyHighlight")}
             </p>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-base leading-relaxed text-brand-gray-600">
+            <p className="text-base leading-relaxed text-brand-gray-600 whitespace-pre-line">
               {t("home.philosophy")}
             </p>
           </FadeIn>

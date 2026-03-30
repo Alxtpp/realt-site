@@ -19,7 +19,7 @@ export default function HomeFeatured() {
             {t("home.featuredTitle")}
           </h2>
         </FadeIn>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           {featured.map((project, i) => (
             <FadeIn key={project.slug} delay={i * 0.1}>
               <ProjectCard project={project} />

@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { useTranslations } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
 
+const WEB3FORMS_ACCESS_KEY = "52d7116d-e01c-48f7-bdb4-bb65cd3a3ae5";
+
 interface FormData {
   firstName: string;
   lastName: string;
@@ -16,6 +18,8 @@ interface FormData {
 export default function ContactForm() {
   const { t } = useTranslations();
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
 
   const {
     register,
@@ -23,9 +27,32 @@ export default function ContactForm() {
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form data:", data);
-    setSubmitted(true);
+  const onSubmit = async (data: FormData) => {
+    setLoading(true);
+    setError(false);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: `Nouveau message de ${data.firstName} ${data.lastName}`,
+          from_name: `${data.firstName} ${data.lastName}`,
+          replyto: data.email,
+          phone: data.phone || "—",
+          message: data.message,
+        }),
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -90,11 +117,15 @@ export default function ContactForm() {
           )}
         />
       </div>
+      {error && (
+        <p className="text-sm text-red-500">{t("contact.error")}</p>
+      )}
       <button
         type="submit"
-        className="inline-flex items-center justify-center px-8 py-3 text-sm tracking-wider uppercase font-medium border border-brand-black text-brand-black hover:bg-brand-black hover:text-white transition-colors duration-300"
+        disabled={loading}
+        className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 sm:py-3 text-sm tracking-wider uppercase font-medium border border-brand-black text-brand-black hover:bg-brand-black hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {t("contact.send")}
+        {loading ? t("contact.sending") : t("contact.send")}
       </button>
     </form>
   );

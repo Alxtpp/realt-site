@@ -6,7 +6,7 @@
     "contact": "Contact"
   },
   "hero": {
-    "tagline": "Real Estate Development & Construction",
+    "tagline": "From vision to the first stone.",
     "scroll": "Discover"
   },
   "home": {
@@ -20,6 +20,8 @@
   "projects": {
     "title": "Projects",
     "upcoming": "Coming soon",
+    "completed": "Completed",
+    "inProgress": "In progress",
     "location": "Location",
     "type": "Type",
     "surface": "Gross floor area",
@@ -29,6 +31,7 @@
     "developer": "Development",
     "delivery": "Delivery",
     "link": "Link",
+    "dedicatedSite": "dedicated website",
     "previous": "Previous project",
     "next": "Next project",
     "residential": "Residential",
@@ -60,6 +63,8 @@
     "message": "Message",
     "send": "Send",
     "success": "Your message has been sent successfully.",
+    "sending": "Sending…",
+    "error": "An error occurred. Please try again.",
     "office": "Our office",
     "address": "Rue Centrale 5, 1110 Morges"
   },

@@ -23,23 +23,22 @@ export default function HomeHero() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-white px-6">
         <motion.h1
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-6xl md:text-8xl font-bold tracking-[0.15em]"
-        >
-          RealT
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="mt-4 text-sm md:text-base tracking-[0.3em] uppercase text-white/80"
+          transition={{ duration: 1, delay: 0.3 }}
+          className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light italic text-white leading-snug"
+          style={{ fontFamily: "var(--font-cormorant)" }}
         >
           {t("hero.tagline")}
-        </motion.p>
+        </motion.h1>
+        <motion.div
+          initial={{ opacity: 0, scaleX: 0 }}
+          animate={{ opacity: 1, scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 1 }}
+          className="mt-6 w-12 h-px bg-white/50"
+        />
       </div>
 
       {/* Scroll Indicator */}

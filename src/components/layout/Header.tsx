@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
@@ -42,14 +43,18 @@ export default function Header() {
         <div className="mx-auto max-w-7xl px-6 md:px-12">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link
-              href={`/${locale}`}
-              className={cn(
-                "text-2xl font-bold tracking-wider transition-colors duration-300",
-                scrolled || !isHome ? "text-brand-black" : "text-white"
-              )}
-            >
-              RealT
+            <Link href={`/${locale}`} className="flex items-center">
+              <Image
+                src="/images/Logo-RealT-removebg-preview.png"
+                alt="RealT"
+                width={120}
+                height={46}
+                className={cn(
+                  "transition-all duration-300 h-8 w-auto",
+                  scrolled || !isHome ? "" : "invert"
+                )}
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}

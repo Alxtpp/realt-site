@@ -13,7 +13,7 @@ export default function ProjectNav({ previous, next }: ProjectNavProps) {
   const { locale, t } = useTranslations();
 
   return (
-    <div className="flex justify-between items-center py-8 border-t border-brand-gray-200">
+    <div className="flex justify-between items-center py-8 border-t border-brand-gray-200 gap-4">
       {previous ? (
         <Link
           href={`/${locale}/projets/${previous.slug}`}
@@ -26,7 +26,7 @@ export default function ProjectNav({ previous, next }: ProjectNavProps) {
             <span className="block text-xs uppercase tracking-wider">
               {t("projects.previous")}
             </span>
-            <span className="text-brand-black">{previous.name}</span>
+            <span className="text-brand-black text-sm">{previous.name}</span>
           </span>
         </Link>
       ) : (
@@ -41,7 +41,7 @@ export default function ProjectNav({ previous, next }: ProjectNavProps) {
             <span className="block text-xs uppercase tracking-wider">
               {t("projects.next")}
             </span>
-            <span className="text-brand-black">{next.name}</span>
+            <span className="text-brand-black text-sm">{next.name}</span>
           </span>
           <span className="text-lg group-hover:translate-x-1 transition-transform duration-300">
             &rarr;

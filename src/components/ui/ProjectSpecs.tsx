@@ -32,20 +32,15 @@ export default function ProjectSpecs({ project }: { project: Project }) {
         </div>
       ))}
       {project.hyperlink && (
-        <div className="flex flex-col sm:flex-row sm:gap-8">
-          <dt className="text-sm text-brand-gray-400 sm:w-56 shrink-0">
-            {t("projects.link")}
-          </dt>
-          <dd>
-            <a
-              href={project.hyperlink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-brand-black underline hover:text-brand-gray-600 transition-colors"
-            >
-              {project.hyperlink}
-            </a>
-          </dd>
+        <div className="flex justify-center pt-4">
+          <a
+            href={project.hyperlink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block border border-brand-black text-brand-black text-sm tracking-wide px-8 py-3 hover:bg-brand-black hover:text-white transition-colors"
+          >
+            {t("projects.dedicatedSite")}
+          </a>
         </div>
       )}
     </div>
