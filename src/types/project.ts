@@ -16,6 +16,7 @@ export interface Project {
   livraison?: string;
   hyperlink?: string;
   heroImage: string;
+  heroImageContain?: boolean;
   galleryImages: string[];
   status: "completed" | "in-progress" | "upcoming";
   featured: boolean;

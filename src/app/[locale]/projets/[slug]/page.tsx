@@ -78,16 +78,29 @@ export default async function ProjectPage({
 
         {/* Hero Image */}
         <FadeIn delay={0.3}>
-          <div className="mt-16 md:mt-20 relative aspect-[16/10] w-full overflow-hidden">
-            <Image
-              src={project.heroImage}
-              alt={project.name}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 1200px"
-              priority
-            />
-          </div>
+          {project.heroImageContain ? (
+            <div className="mt-16 md:mt-20 max-w-2xl mx-auto">
+              <Image
+                src={project.heroImage}
+                alt={project.name}
+                width={800}
+                height={600}
+                className="w-full h-auto object-contain"
+                priority
+              />
+            </div>
+          ) : (
+            <div className="mt-16 md:mt-20 relative aspect-[16/10] w-full overflow-hidden">
+              <Image
+                src={project.heroImage}
+                alt={project.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 1200px"
+                priority
+              />
+            </div>
+          )}
         </FadeIn>
 
         {/* Gallery */}
