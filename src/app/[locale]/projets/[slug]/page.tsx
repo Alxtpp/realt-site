@@ -90,6 +90,22 @@ export default async function ProjectPage({
           </div>
         </FadeIn>
 
+        {/* External link */}
+        {project.hyperlink && (
+          <FadeIn delay={0.35}>
+            <div className="mt-10 md:mt-14">
+              <a
+                href={project.hyperlink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block border border-brand-black px-8 py-3 text-sm uppercase tracking-widest hover:bg-brand-black hover:text-white transition-colors duration-300"
+              >
+                Visiter le site du projet
+              </a>
+            </div>
+          </FadeIn>
+        )}
+
         {/* Gallery */}
         {project.galleryImages.length > 0 && (
           <div className="mt-10 md:mt-16">

@@ -102,6 +102,7 @@ galleryImages: [
       "/images/projects/villas-arbora/gallery-01.jpg",
       "/images/projects/villas-arbora/gallery-02.jpg",
     ],
+    hyperlink: "https://vergers14.realt.swiss/",
     status: "in-progress",
     featured: true,
     order: 4,
