@@ -11,7 +11,7 @@ export const team: TeamMember[] = [
     name: "Pierre Tranchant",
     role: { fr: "Associé fondateur", en: "Founding Partner" },
     phone: "+41 76 804 07 54",
-    email: "pierre@realT.swiss",
+    email: "pierre@realt.swiss",
     image: "/images/team/pierre-tranchant.jpg",
   },
   {

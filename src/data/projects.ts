@@ -95,7 +95,6 @@ export const projects: Project[] = [
     maitreOuvrage: "RealT SA",
     architecte: "Outsider.Architecture SA",
     developpement: "RealT SA",
-    livraison: "Printemps 2026",
     heroImage: "/images/projects/villas-arbora/hero.jpg",
 galleryImages: [
       "/images/projects/villas-arbora/gallery-01.jpg",
