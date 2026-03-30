@@ -23,6 +23,9 @@ export const metadata: Metadata = {
   },
   description:
     "RealT SA - Promotion immobilière et construction en Suisse romande. Plus de 25 ans d'expérience.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
