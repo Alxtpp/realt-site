@@ -21,7 +21,6 @@ export const projects: Project[] = [
     galleryImages: [
       "/images/projects/jardins-saubraz/gallery-02.jpg",
       "/images/projects/jardins-saubraz/gallery-03.jpg",
-      "/images/projects/jardins-saubraz/chantier-01.jpg",
       "/images/projects/jardins-saubraz/chantier-02.jpg",
       "/images/projects/jardins-saubraz/chantier-03.jpg",
       "/images/projects/jardins-saubraz/chantier-04.jpg",
