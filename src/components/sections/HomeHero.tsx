@@ -14,7 +14,7 @@ export default function HomeHero() {
         src="/images/hero-home-arboris.jpg"
         alt="RealT SA"
         fill
-        className="object-cover"
+        className="object-cover object-[70%_60%]"
         priority
         sizes="100vw"
       />
