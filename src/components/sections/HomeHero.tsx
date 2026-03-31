@@ -11,7 +11,7 @@ export default function HomeHero() {
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/images/hero-home.jpg"
+        src="/images/hero-home-arboris.jpg"
         alt="RealT SA"
         fill
         className="object-cover"
