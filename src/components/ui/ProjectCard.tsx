@@ -9,11 +9,7 @@ import type { Project } from "@/types/project";
 export default function ProjectCard({ project }: { project: Project }) {
   const { locale, t } = useTranslations();
 
-  const href = project.hyperlink
-    ? project.hyperlink.startsWith("http")
-      ? project.hyperlink
-      : `/${locale}${project.hyperlink}`
-    : `/${locale}/projets/${project.slug}`;
+  const href = `/${locale}/projets/${project.slug}`;
 
   return (
     <Link href={href} className="group block">
