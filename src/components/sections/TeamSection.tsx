@@ -9,13 +9,13 @@ export default function TeamSection() {
   const { locale, t } = useTranslations();
 
   return (
-    <div className="mb-12">
+    <div className="mb-4 md:mb-12">
       <FadeIn>
         <h2 className="text-2xl font-light tracking-wide mb-12">
           {t("about.teamTitle")}
         </h2>
       </FadeIn>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-6 max-w-3xl">
         {team.map((member, i) => (
           <FadeIn key={member.name} delay={i * 0.1}>
             <div className="group">

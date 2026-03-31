@@ -4,7 +4,7 @@ import AboutContent from "@/components/sections/AboutContent";
 
 export default function AboutPage() {
   return (
-    <section className="pt-32 pb-24 md:pb-32">
+    <section className="pt-32 pb-12 md:pb-32">
       <Container>
         <AboutContent />
         <TeamSection />
