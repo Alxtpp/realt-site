@@ -9,7 +9,7 @@ export default function TeamSection() {
   const { locale, t } = useTranslations();
 
   return (
-    <div className="mb-24">
+    <div className="mb-12">
       <FadeIn>
         <h2 className="text-2xl font-light tracking-wide mb-12">
           {t("about.teamTitle")}

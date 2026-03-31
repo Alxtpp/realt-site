@@ -16,7 +16,7 @@ export default function ProjectSpecs({ project }: { project: Project }) {
     { label: t("projects.client"), value: project.maitreOuvrage },
     { label: t("projects.architect"), value: project.architecte },
     { label: t("projects.developer"), value: project.developpement },
-    ...(project.livraison
+    ...(project.livraison && project.status === "completed"
       ? [{ label: t("projects.delivery"), value: project.livraison }]
       : []),
   ];
