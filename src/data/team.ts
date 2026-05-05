@@ -18,7 +18,7 @@ export const team: TeamMember[] = [
     name: "Cédric Loubet",
     role: { fr: "Associé fondateur", en: "Founding Partner" },
     phone: "+41 79 212 87 07",
-    email: "cedric@realT.swiss",
+    email: "cedric@realt.swiss",
     image: "/images/team/cedric-loubet.jpg",
   },
 ];
