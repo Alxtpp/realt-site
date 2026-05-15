@@ -199,6 +199,28 @@ galleryImages: [
     featured: false,
     order: 8,
   },
+  {
+    slug: "villas-orea",
+    name: "Les Villas Oréa",
+    location: "Meyrin, GE",
+    address: "Meyrin, GE",
+    description: {
+      fr: "Ensemble résidentiel de 4 logements à Meyrin.",
+      en: "Residential development of 4 housing units in Meyrin.",
+    },
+    type: "Résidentiel",
+    surfaceSBP: 537,
+    nombreLogements: 4,
+    maitreOuvrage: "RealT SA",
+    architecte: "MDT architectes Sàrl",
+    developpement: "RealT SA",
+    heroImage: "/images/projects/villas-orea/hero.png",
+    heroImageContain: true,
+    galleryImages: [],
+    status: "upcoming",
+    featured: false,
+    order: 9,
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
