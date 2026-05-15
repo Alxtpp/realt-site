@@ -209,7 +209,7 @@ galleryImages: [
       en: "Residential development of 4 housing units in Meyrin.",
     },
     type: "Résidentiel",
-    surfaceSBP: 537,
+    surfaceSBP: 500,
     nombreLogements: 4,
     maitreOuvrage: "RealT SA",
     architecte: "MDT architectes Sàrl",
