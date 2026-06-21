@@ -149,7 +149,10 @@ galleryImages: [
     developpement: "RealT SA",
     livraison: "2027",
     heroImage: "/images/projects/florea/hero.jpg",
-    galleryImages: [],
+    galleryImages: [
+      "/images/projects/florea/gallery-01.jpg",
+      "/images/projects/florea/gallery-02.jpg",
+    ],
     status: "upcoming",
     featured: false,
     order: 6,
