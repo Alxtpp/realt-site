@@ -224,6 +224,28 @@ galleryImages: [
     featured: false,
     order: 9,
   },
+  {
+    slug: "villas-eden",
+    name: "Les Villas Eden",
+    location: "Grand-Saconnex, GE",
+    address: "Grand-Saconnex, GE",
+    description: {
+      fr: "Ensemble résidentiel de 3 logements au Grand-Saconnex.",
+      en: "Residential development of 3 housing units in Grand-Saconnex.",
+    },
+    type: "Résidentiel",
+    surfaceSBP: 442,
+    nombreLogements: 3,
+    maitreOuvrage: "RealT SA",
+    architecte: "MDT architectes Sàrl",
+    developpement: "RealT SA",
+    heroImage: "/images/projects/villas-eden/hero.png",
+    heroImageContain: true,
+    galleryImages: [],
+    status: "upcoming",
+    featured: false,
+    order: 10,
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
