@@ -6,6 +6,7 @@ import FadeIn from "@/components/ui/FadeIn";
 import ProjectSpecs from "@/components/ui/ProjectSpecs";
 import ProjectNav from "@/components/ui/ProjectNav";
 import ImageGallery from "@/components/ui/ImageGallery";
+import { getImageSize } from "@/lib/imageSize";
 
 export function generateStaticParams() {
   return projects.map((project) => ({
@@ -39,6 +40,11 @@ export default async function ProjectPage({
   if (!project) notFound();
 
   const { previous, next } = getAdjacentProjects(slug);
+
+  const galleryImages = project.galleryImages.map((src) => ({
+    src,
+    ...(getImageSize(src) ?? {}),
+  }));
 
   return (
     <article className="pt-32 pb-24 md:pb-32">
@@ -104,9 +110,9 @@ export default async function ProjectPage({
         </FadeIn>
 
         {/* Gallery */}
-        {project.galleryImages.length > 0 && (
+        {galleryImages.length > 0 && (
           <div className="mt-10 md:mt-16">
-            <ImageGallery images={project.galleryImages} alt={project.name} />
+            <ImageGallery images={galleryImages} alt={project.name} />
           </div>
         )}
 
